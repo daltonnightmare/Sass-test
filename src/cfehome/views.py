@@ -8,8 +8,9 @@ def home(request, *args, **kwargs):
 	titre = "willy"
 	context = {
 		'PageVisit':pagevisit,
-		'nbr': pagevisit.count(),
-		'titre': titre
+		'titre': titre,
+		'nbr': pagevisit.count()
+		
 	}
 	return render(request, 'index.html', context)
 
